@@ -85,6 +85,12 @@ pnpm install
 pnpm dev
 ```
 
+## install Node definitions from root
+
+```sh
+pnpm add -D @types/node -w
+```
+
 ### PRISMA
 
 - create @repo/database package
@@ -110,3 +116,17 @@ npx prisma init
 # configure db
 
 - .env (DATABASE_URL)
+
+# generate prisma files
+
+```sh
+npx prisma generate
+```
+
+# create first migration
+
+```sh
+npx prisma migrate dev
+```
+
+Prisma client

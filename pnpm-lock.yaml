@@ -21,7 +21,11 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
-  apps/api: {}
+  apps/api:
+    dependencies:
+      '@repo/database':
+        specifier: workspace:*
+        version: link:../../packages/database
 
   apps/mobile:
     dependencies:
